@@ -20,10 +20,10 @@
         <section class="ticket_price_km">
             <h2>Calcola il prezzo del biglietto</h2>
             <div class="info">
-                <div class="info-block">
+                <form class="info-block" id="infoBlock">
                     <div class="name-block block">
                         <h4>Nome Cognome</h4>
-                        <input type="text" id="name">
+                        <input type="text" id="nome">
                     </div>
         
                     <div class="km-block block">
@@ -34,20 +34,22 @@
                     <div class="age-block">
                         <h4>Età:</h4>
                         <select name="age" id="age" class="bg-none">
-                            <option value="Minorenne">Minorenne</option>
-                            <option value="Maggiorenne">Maggiorenne</option>
-                            <option value="Senior">Over 65</option>
+                            <option value="minorenne" >Minorenne</option>
+                            <option value="maggiorenne">Maggiorenne</option>
+                            <option value="senior">Over 65</option>
                         </select>
                     </div>
-                </div>
+                </form>
 
-                <button id="generate" class="bg-none">Genera</button>
-                <button id="reset" class="bg-none">Annulla</button>
+                <div class="button-row">
+                    <button id="generate" class="bg-none">Genera</button>
+                    <button id="reset" class="bg-none">Annulla</button>
+                </div>
             </div>
         </section>
 
         <!-- your ticket block -->
-        <section class="your_ticket">
+        <section class="your_ticket" id="boxOutput">
             <h2>Il tuo biglietto</h2>
             <div class="ticket">
                 <h3>DETTAGLIO PASSEGGERI</h4>
@@ -57,11 +59,40 @@
                         <div id="namePassenger"></div>
                     </div>
                    <div class="right-side">
-                    <h6>Offerta</h6>
-                    <h6>Carrozza</h6>
-                    <h6>Codice</h6>
-                    <h6>Costo biglietto</h6>
-                    <div id="price"></div>
+                        <div class="right-block">
+                            <ul>
+                                <li>
+                                    <h3>Offerta</h3>
+                                </li>
+                                <li>
+                                    <div id="offer"></div>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <h3>Carrozza</h3>
+                                </li>
+                                <li>
+                                    <div id="numCarr"></div>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <h3>Codice CP</h3>
+                                </li>
+                                <li>
+                                    <div id="CP"></div>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <h3>Costo biglietto</h3>
+                                </li>
+                                <li>
+                                    <div id="price"></div>
+                                </li>
+                            </ul>
+                        </div>
                    </div>
                 </div>
             </div>

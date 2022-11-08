@@ -24,7 +24,7 @@ button{
     border: 1px solid #cf132c;
     padding: 10px;
     border-radius: 10px;
-    margin: 20px 10px;
+    margin: 20px 0;
     font-size: 18px;
 }
 
@@ -87,10 +87,18 @@ h4 {
     font-size: 18px;
 }
 
+.button-row{
+    margin-left: 60px;
+}
+
 /* your ticket block */
 .your_ticket{
     font-size: 25px;
     margin: 50px 0;
+}
+
+#boxOutput{
+    display: none;
 }
 
 .your_ticket > h2{
@@ -107,32 +115,49 @@ h4 {
 
 .ticket > h3{
     font-size: 22px;
+    margin-left: 11px;
 }
 
 .ticket-block{
+    line-height: 30px;
     display: flex;
     width: 100%;
 }
 
 .left-side{
     background-color: grey;
-    padding: 20px 50px;
+    padding: 50px 50px;
     width: 30%;
-    line-height: 30px;
+    line-height: 60px;
     font-size: 20px;
+    border-radius: 20px 0 0 20px;
     /* DEBUG */
     border: 1px solid black;
 }
 
 .right-side{
-    display: flex;
     flex-grow: 1;
-    align-items: center;
-    justify-content: space-around;
-    font-size: 18px;
+    font-size: 15px;
+    line-height: 60px;
+    border-radius: 0 20px 20px 0;
     /* DEBUG */
-    background-color: RED;
     border: 1px solid black;
+}
+
+.right-block{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 50px 10px;
+}
+
+.right-block ul{
+    list-style: none;
+}
+
+#price{
+    color: #cf132c;
+    font-size: 25px;
 }
 
 /* footer */
