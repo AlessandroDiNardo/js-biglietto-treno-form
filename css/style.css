@@ -1,0 +1,90 @@
+/* regole generali */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bg-none{
+    background-color: white;
+}
+
+button{
+    border: 1px solid #cf132c;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 20px 10px;
+}
+
+
+/* header */
+header{
+    background-color: #006c67;
+    color: black;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    padding: 30px;
+    border-radius: 30px;
+    text-align: center;
+}
+
+
+
+/* main */
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.info{
+    text-align: center;
+    border: 1px solid #cf132c;
+    height: 100%;
+    width: 100%;
+    margin: 20px 0;
+    border-radius: 20px;
+    font-size: 25px;
+}
+
+.info-block{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+h4 {
+    margin: 20px 0;
+}
+
+.block > input, select{
+    border: 1px solid #cf132c;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px 30px;
+    height: 100%;
+    width: 100%;
+}
+
+
+
+
+/* footer */
+footer{
+    background-color: #cf132c;
+    text-align: center;
+    height: 100%;
+    padding: 30px;
+}
+
+footer img{
+    width: 150px;
+    height: 150px;
+    border: 2px solid #006c67;
+    border-radius: 50%;
+}
