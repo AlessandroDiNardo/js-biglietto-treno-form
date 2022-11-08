@@ -53,12 +53,12 @@ element.addEventListener(`click`,
         // codice CP
         document.getElementById("CP").innerHTML = Math.floor(Math.random() * 100000) + 1;
 
-
         // apparizione secondo biglietto
         const yourTicket = document.getElementById("boxOutput");
         yourTicket.style.display = "block";
 
-
+        // rimozione margin
+        document.getElementById("container").style.margin = "0 auto";
     }    
 
 );                                               
