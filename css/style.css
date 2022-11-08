@@ -5,6 +5,17 @@
     box-sizing: border-box;
 }
 
+body{
+    background-color: rgb(230, 230, 230);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: rgb(255, 255, 255);
+}
+
 .bg-none{
     background-color: white;
 }
@@ -14,8 +25,13 @@ button{
     padding: 10px;
     border-radius: 10px;
     margin: 20px 10px;
+    font-size: 18px;
 }
 
+button:hover{
+    cursor: pointer;
+    background-color: grey;
+}
 
 /* header */
 header{
@@ -36,19 +52,18 @@ h1{
 
 
 /* main */
-.container{
-    max-width: 1200px;
-    margin: 0 auto;
-}
 
-.info{
+/* price ticket block */
+.ticket_price_km{
     text-align: center;
+    font-size: 25px;
+    margin: 50px 0;
+}
+.info{
     border: 1px solid #cf132c;
     height: 100%;
-    width: 100%;
-    margin: 20px 0;
+    margin: 0 100px;
     border-radius: 20px;
-    font-size: 25px;
 }
 
 .info-block{
@@ -69,10 +84,56 @@ h4 {
     padding: 10px 30px;
     height: 100%;
     width: 100%;
+    font-size: 18px;
 }
 
+/* your ticket block */
+.your_ticket{
+    font-size: 25px;
+    margin: 50px 0;
+}
 
+.your_ticket > h2{
+    text-align: center;
+}
 
+.ticket{
+    border: 1px solid #cf132c;
+    height: 100%;
+    margin: 0 100px;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.ticket > h3{
+    font-size: 22px;
+}
+
+.ticket-block{
+    display: flex;
+    width: 100%;
+}
+
+.left-side{
+    background-color: grey;
+    padding: 20px 50px;
+    width: 30%;
+    line-height: 30px;
+    font-size: 20px;
+    /* DEBUG */
+    border: 1px solid black;
+}
+
+.right-side{
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 18px;
+    /* DEBUG */
+    background-color: RED;
+    border: 1px solid black;
+}
 
 /* footer */
 footer{

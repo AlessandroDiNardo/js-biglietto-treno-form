@@ -8,14 +8,17 @@
     <title>Document</title>
 </head>
 <body>
-    <!-- header -->
+    <div class="container">
+        <!-- header -->
     <header>
-        <h1> Calcola il prezzo del biglietto</h1>
+        <h1> Tratta e costo del tuo viaggio</h1>
     </header>
 
-    <!-- maain -->
+    <!-- main -->
     <main>
-        <div class="container">
+        <!-- price ticket block -->
+        <section class="ticket_price_km">
+            <h2>Calcola il prezzo del biglietto</h2>
             <div class="info">
                 <div class="info-block">
                     <div class="name-block block">
@@ -41,12 +44,28 @@
                 <button id="generate" class="bg-none">Genera</button>
                 <button id="reset" class="bg-none">Annulla</button>
             </div>
-    
-                <div class="trip-block block">
-                    <h2>Prezzo:</h2>
+        </section>
+
+        <!-- your ticket block -->
+        <section class="your_ticket">
+            <h2>Il tuo biglietto</h2>
+            <div class="ticket">
+                <h3>DETTAGLIO PASSEGGERI</h4>
+                <div class="ticket-block">
+                    <div class="left-side">
+                        <h5>NOME PASSEGGERO</h5>
+                        <div id="namePassenger"></div>
+                    </div>
+                   <div class="right-side">
+                    <h6>Offerta</h6>
+                    <h6>Carrozza</h6>
+                    <h6>Codice</h6>
+                    <h6>Costo biglietto</h6>
                     <div id="price"></div>
+                   </div>
                 </div>
-        </div>
+            </div>
+        </section>
     </main>
 
     <!-- footer -->
@@ -54,6 +73,8 @@
         <img src="img/ferrovie-dello-stato-italiane_2383799-1024x576.webp" alt="">
     </footer>
 
+    </div>
+    
     <!-- scritp js -->
     <script src="js/main.js"></script>
 </body>
